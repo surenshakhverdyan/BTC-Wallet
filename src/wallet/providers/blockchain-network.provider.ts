@@ -10,7 +10,7 @@ export class BlockchainNetworkProvider {
   constructor() {
     this.bitcoin = mempoolJS({
       hostname: 'mempool.space',
-      network: 'testnet',
+      network: 'testnet', // change to 'mainnet' for production
     }).bitcoin;
   }
 

@@ -13,7 +13,7 @@ import { BitcoinHelper } from '../bitcoin/helpers/bitcoin.helper';
 
 @Injectable()
 export class WalletService {
-  private readonly network = bitcoin.networks.testnet;
+  private readonly network = bitcoin.networks.testnet; // Change to mainnet for production
   private readonly ECPair = ECPairFactory(ecc);
 
   constructor(
